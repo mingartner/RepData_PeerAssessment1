@@ -122,13 +122,9 @@ $(document).ready(function () {
 </div>
 
 
-<div id="download-the-data-file-remove-to-download-the-file-and-load-data" class="section level2">
-<h2>Download the data file (remove ## to download the file) and load data</h2>
-<pre class="r"><code>## fileUrl &lt;- &quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;
-## fp &lt;- file.path(getwd(), './c5wk2.zip')
-## download.file(fileUrl, fp)
-unzip(&quot;activity.zip&quot;)
-
+<div id="unzip-the-file-and-load-data" class="section level2">
+<h2>unzip the file and load data</h2>
+<pre class="r"><code>unzip(&quot;activity.zip&quot;)
 activitydata &lt;- read.csv(&quot;activity.csv&quot;)</code></pre>
 </div>
 <div id="load-required-packages" class="section level2">

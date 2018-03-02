@@ -1,16 +1,14 @@
 ---
 title: "Reproducible Research Week2 Assignment"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
-## Download the data file (remove ## to download the file) and load data
+## unzip the file and load data
 
 ```{r getdata, echo = TRUE}
-## fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
-## fp <- file.path(getwd(), './c5wk2.zip')
-## download.file(fileUrl, fp)
 unzip("activity.zip")
-
 activitydata <- read.csv("activity.csv")
 ```
 
